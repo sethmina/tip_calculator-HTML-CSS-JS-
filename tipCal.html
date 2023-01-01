@@ -1,0 +1,42 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculater</title>
+    <link rel="stylesheet" href="tipCal.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa:wght@600&family=Nunito+Sans:wght@400;800&family=Outfit:wght@100;200;300;400;500;600&family=Poppins&family=Prompt:wght@300;400&family=Staatliches&family=Teko:wght@400;500&display=swap" rel="stylesheet"> -->
+</head>
+
+<body>
+
+    <div id="tipBackground">
+        <h1 id="header">Tip Calculater</h1>
+        <h2 id="total">Total</h2>
+        <div id="paymentArea">
+            <input id="totalPayment" type="number" value="">
+            <select list="currencyList" id="currency">
+                <option value="1">$</option>
+                <option value="2">€</option>
+                <option value="3">£</option>
+                <option value="4">¥</option>
+            </select>
+        </div>
+        <h2 id="members">Members</h2>
+        <div id="membersDiv">
+            <input type="button" value="-" id="sub">
+            <input id="valueofMembers" type="number" value="1">
+            <input type="button" value="+" id="plus">
+        </div>
+        <div id="precentRange">
+            <input type="range" id="tipPrecentage" min="0" max="30" value="0">
+            <h4 id="precentageValue">0</h4>
+        </div>
+        <h2 id="tipHeading">Your Tip</h2>
+        <h1 id="tipValue">0</h1>
+    </div>
+    <script src="tipCal.js"></script>
+</body>
+
+</html>
